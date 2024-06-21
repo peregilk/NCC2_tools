@@ -26,7 +26,7 @@ def process_line(data, input_filename, id_prefix, id_counter, min_words, min_edu
         id_counter[0] += 1
 
     # Validate text field
-    if 'text' not in data or len(data['text'].split()) < min_words:
+    if 'text' not in data or not isinstance(data['text'], str) or len(data['text'].split()) < min_words:
         return None
 
     if fix_text_flag:

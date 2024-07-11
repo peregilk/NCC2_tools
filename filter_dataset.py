@@ -8,7 +8,7 @@ import ftfy
 def fix_text(text):
     return ftfy.fix_text(text)
 
-def process_line(data, input_filename, id_prefix, id_counter, min_words, min_edu_score, fix_text_flag):
+def process_line(data, input_filename, id_prefix, id_counter, min_words, min_edu_score, min_ling_score, fix_text_flag):
     try:
         data = json.loads(data)
     except json.JSONDecodeError:
@@ -51,11 +51,21 @@ def process_line(data, input_filename, id_prefix, id_counter, min_words, min_edu
     else:
         return None
 
-    if score < min_edu_score:
+    if 'ling_score' in data:
+        try:
+            ling_score = float(data['ling_score'])
+        except ValueError:
+            print("ValueError: Invalid ling_score")
+            return None
+    else:
+        ling_score = None
+
+    if (min_edu_score is not None and score < min_edu_score) or (min_ling_score is not None and (ling_score is None or ling_score < min_ling_score)):
         return None
 
     data['edu_score'] = score
-    data['edu_int_score'] = int_score
+    if ling_score is not None:
+        data['ling_score'] = ling_score
     del data['score']
     del data['int_score']
 
@@ -68,16 +78,17 @@ def process_line(data, input_filename, id_prefix, id_counter, min_words, min_edu
         'id': data['id'],
         'text': data['text'],
         'edu_score': data['edu_score'],
-        'edu_int_score': data['edu_int_score'],
         'doc_type': data['doc_type']
     }
+    if ling_score is not None:
+        valid_data['ling_score'] = ling_score
 
     return json.dumps(valid_data)
 
-def process_chunk(chunk, input_filename, id_prefix, id_counter, min_words, min_edu_score, fix_text_flag):
+def process_chunk(chunk, input_filename, id_prefix, id_counter, min_words, min_edu_score, min_ling_score, fix_text_flag):
     results = []
     for line in chunk:
-        result = process_line(line, input_filename, id_prefix, id_counter, min_words, min_edu_score, fix_text_flag)
+        result = process_line(line, input_filename, id_prefix, id_counter, min_words, min_edu_score, min_ling_score, fix_text_flag)
         if result:
             results.append(result)
     return results
@@ -100,7 +111,8 @@ def main():
     parser.add_argument('--input_file', required=True, help='Path to the input JSONL file.')
     parser.add_argument('--output_dir', required=True, help='Directory to save the output JSONL file.')
     parser.add_argument('--min_words', type=int, default=10, help='Minimum number of words in the text field.')
-    parser.add_argument('--min_edu_score', type=float, default=0.0, help='Minimum value of the edu_score field.')
+    parser.add_argument('--min_edu_score', type=float, help='Minimum value of the edu_score field.')
+    parser.add_argument('--min_ling_score', type=float, help='Minimum value of the ling_score field.')
     parser.add_argument('--max_cpu_count', type=int, default=48, help='Maximum number of CPU cores to use.')
     parser.add_argument('--fix_text', action='store_true', help='Fix text using ftfy.')
     args = parser.parse_args()
@@ -122,7 +134,7 @@ def main():
         chunk_generator = read_in_chunks(infile, chunk_size=1000)
         
         with ProcessPoolExecutor(max_workers=num_cores) as executor:
-            future_to_chunk = {executor.submit(process_chunk, chunk, input_filename, id_prefix, id_counter, args.min_words, args.min_edu_score, args.fix_text): chunk for chunk in chunk_generator}
+            future_to_chunk = {executor.submit(process_chunk, chunk, input_filename, id_prefix, id_counter, args.min_words, args.min_edu_score, args.min_ling_score, args.fix_text): chunk for chunk in chunk_generator}
 
             chunk_count = 0
             for future in future_to_chunk:

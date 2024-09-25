@@ -1,2 +1,2 @@
 Use this command:
-cat *.jsonl | shuf | split -l $(($(wc -l <(cat *.jsonl) | awk '{print int($1/257)}'))) -a 3 -d corpus/train_ && for f in corpus/train_*; do mv "$f" "$f.jsonl"; done && mv corpus/train_$(printf "%03d" $(ls corpus | grep -Eo '[0-9]+' | sort -nr | head -n1)).jsonl corpus/validation.jsonl
+mkdir -p corpus && num_lines=$(cat *.jsonl | wc -l) && lines_per_file=$(($num_lines / 257)) && echo "Total lines: $num_lines, Lines per file: $lines_per_file" && cat *.jsonl | shuf | split -l $lines_per_file -d -a 3 corpus/train_ && for f in corpus/train_*; do mv "$f" "$f.jsonl"; done && last_file=$(ls corpus/train_* | sort | tail -n 1) && mv "$last_file" corpus/validation.jsonl && ls -l corpus

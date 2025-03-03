@@ -1,0 +1,100 @@
+{"pre_prompt":"Bruk din forståelse til å skrive en naturlig fortsettelse."}
+{"pre_prompt":"Bruk din kreativitet til å bygge videre på dette utkastet."}
+{"pre_prompt":"Bruk din kunnskap til å skrive en passende avslutning."}
+{"pre_prompt":"Bruk din skriveerfaring til å fullføre dette eksempelet."}
+{"pre_prompt":"Bruk din tekstforståelse til å fullføre dette eksempelet."}
+{"pre_prompt":"Vennligst fullfør dette eksempelet."}
+{"pre_prompt":"Dette er en del av en større tekst. Hva kommer naturligvis etter?"}
+{"pre_prompt":"Dette er en tekstbit som trenger mer innhold. Hva følger?"}
+{"pre_prompt":"Dette er et eksempel på ufullstendig tekst. Gjør det ferdig."}
+{"pre_prompt":"Dette er et tekstfragment. Gjør det til en fullverdig del."}
+{"pre_prompt":"Dette er et tekstutdrag som trenger avslutning. Fullfør det."}
+{"pre_prompt":"Dette er et uferdig eksempel. Gjør det komplett."}
+{"pre_prompt":"Dette er et uferdig konsept. Utvikl det til en helhetlig tekst."}
+{"pre_prompt":"Dette er et ufullstendig segment. Fullfør det logisk."}
+{"pre_prompt":"Dette er første del av et dokument. Skriv den neste delen."}
+{"pre_prompt":"Dette er starten. Komplettér det."}
+{"pre_prompt":"Dette er starten på et dokument. Komplettér det."}
+{"pre_prompt":"Dette er starten på noe større. Hva kommer etter?"}
+{"pre_prompt":"Dette utdraget trenger mer innhold. Hva kommer etter?"}
+{"pre_prompt":"Foreslå en konkret og situasjonsvarende avslutning."}
+{"pre_prompt":"Foreslå en realistisk videreføring av dette innholdet."}
+{"pre_prompt":"Forfatteren stoppet her. Hva ville du skrevet videre?"}
+{"pre_prompt":"Fortsett dette innholdet som om du fortsatte en eksisterende tekst."}
+{"pre_prompt":"Fortsett dette innholdet som om du var originalen's forfatter."}
+{"pre_prompt":"Fortsett innholdet slik det ville bli gjort i en hvilken som helst tekst."}
+{"pre_prompt":"Fortsett innholdet som om du fullfører en standard tekst."}
+{"pre_prompt":"Fortsett innholdet som om du fullfører et anonymt dokument."}
+{"pre_prompt":"Fortsett innholdet ved å bygge på eksisterende informasjon."}
+{"pre_prompt":"Fortsett teksten i tråd med det som allerede er skrevet."}
+{"pre_prompt":"Fortsett teksten som om du følger en usynlig struktur."}
+{"pre_prompt":"Fortsett teksten under bruk av samme stil og tone."}
+{"pre_prompt":"Fullfør denne teksten med nødvendig informasjon."}
+{"pre_prompt":"Fullfør dette eksempelet uten å endre grunntonen."}
+{"pre_prompt":"Fullfør dette tekstbidraget med profesjonell kompetanse."}
+{"pre_prompt":"Fullfør dette tekstutdraget på en logisk måte."}
+{"pre_prompt":"Fullfør dette utdraget slik det ville fremstått i sin opprinnelige kontekst."}
+{"pre_prompt":"Fullfør dette utdraget ved å følge tekstens indre logikk."}
+{"pre_prompt":"Fullfør dette utkastet ved å respektere dets opprinnelige formål."}
+{"pre_prompt":"Fullfør teksten slik den ville dukket opp i en naturlig kontekst."}
+{"pre_prompt":"Fullfør teksten ved å følge dens underliggende struktur."}
+{"pre_prompt":"Generer en naturlig fortsettelse basert på kontekstuelle hint."}
+{"pre_prompt":"Hva er den logiske progresjonen av disse tankene?"}
+{"pre_prompt":"Hva er den mest logiske påfølgende delen av denne teksten?"}
+{"pre_prompt":"Hva er den mest naturlige måten å fortsette dette på?"}
+{"pre_prompt":"Hva er den mest troverdige fortsettelsen av disse setningene?"}
+{"pre_prompt":"Hva er den naturlige progresjonen av denne teksten?"}
+{"pre_prompt":"Hva er den trolige retningen til denne teksten? Skriv videre."}
+{"pre_prompt":"Hva er den underliggende tråden her? Fullfør teksten i samsvar."}
+{"pre_prompt":"Hva følger logisk etter denne tekstbiten?"}
+{"pre_prompt":"Hva mangler for å gjøre dette tekstbidraget komplett? Fullfør det."}
+{"pre_prompt":"Hva mangler for å gjøre dette til en komplett historie? Legg til."}
+{"pre_prompt":"Hva mangler for å gjøre dette til en komplett tekst? Legg til."}
+{"pre_prompt":"Hva ville gjøre dette innholdet mer komplett? Skriv videre."}
+{"pre_prompt":"Hva ville gjort dette avsnittet mer informativt? Skriv videre."}
+{"pre_prompt":"Hva ville gjort dette til en helhetlig tekst? Legg til."}
+{"pre_prompt":"Hva ville gjort dette til en selvstendig tekst? Fullfør det."}
+{"pre_prompt":"Hva ville vært en god måte å knytte dette til neste del?"}
+{"pre_prompt":"Hva ville vært en hensiktsmessig neste del i denne teksten?"}
+{"pre_prompt":"Hva ville vært en troverdig videreføring av disse tankene?"}
+{"pre_prompt":"Hva vil være en naturlig avslutning på dette utkastet?"}
+{"pre_prompt":"Hva vil være en passende avslutning på dette innledende utdraget?"}
+{"pre_prompt":"Hva vil være en rimelig påfølging til disse setningene?"}
+{"pre_prompt":"Hvilken informasjon mangler for kompletthet? Skriv den."}
+{"pre_prompt":"Hvilken retning bør teksten ta herfra? Implementer det."}
+{"pre_prompt":"Hvilken retning vil du ta dette innholdet i? Utvikl ideen."}
+{"pre_prompt":"Hvordan kan denne sekvensen utvides til et helhetlig innhold? Skriv videre."}
+{"pre_prompt":"Hvordan kan denne teksten utvides uten å miste sammenhengen? Skriv videre."}
+{"pre_prompt":"Hvordan kan dette fragmentet bygges ut til en fullstendig tekst?"}
+{"pre_prompt":"Hvordan kan dette fragmentet fortsettes i en større tekst? Skriv videre"}
+{"pre_prompt":"Hvordan kan dette fragmentet utvikles til en fullverdig tekst?"}
+{"pre_prompt":"Hvordan kan dette utdraget utvides til et helhetlig dokument?"}
+{"pre_prompt":"Hvordan kan man utvide dette uten å avvike fra hovedtema?"}
+{"pre_prompt":"Hvordan kan man utvide dette uten å bryte stilarten?"}
+{"pre_prompt":"Hvordan vil denne informasjonen trolig bli presentert videre?"}
+{"pre_prompt":"Hvordan vil en profesjonell skribent fullføre denne teksten?"}
+{"pre_prompt":"Hvordan ville du som ekspert fullføre dette utkastet? Skriv videre."}
+{"pre_prompt":"Hvordan ville en assistent respondert for å fortsette naturlig?"}
+{"pre_prompt":"Hvordan ville en ekspert på feltet utdype dette? Skriv videre."}
+{"pre_prompt":"Hvordan ville en erfaren journalist formulert neste del i samme stil?"}
+{"pre_prompt":"Hvordan ville en erfaren redaktør utvidet dette utkastet?"}
+{"pre_prompt":"Hvordan ville en faglært person utviklet dette temaet videre?"}
+{"pre_prompt":"Hvordan ville en sakkyndig person utdype dette?"}
+{"pre_prompt":"Produser en kontekstuell fortsettelse uten å bryte flyten."}
+{"pre_prompt":"Skriv en fortsettelse som opprettholder tekstens integritet."}
+{"pre_prompt":"Skriv en passende fortsettelse til denne teksten."}
+{"pre_prompt":"Skriv en passende påfølging til dette innholdet."}
+{"pre_prompt":"Skriv videre på dette innholdet uten å miste sammenhengen."}
+{"pre_prompt":"Skriv videre på en måte som oppfyller tekstens formål."}
+{"pre_prompt":"Skriv videre uten å endre tekstens grunnleggende karakter."}
+{"pre_prompt":"Som en dyktig skribent: hva ville din neste handling vært?"}
+{"pre_prompt":"Som en erfaren forfatter: utvid dette innholdet naturlig."}
+{"pre_prompt":"Som språkmodell: vis hvordan du ville håndtert denne fortsettelsen."}
+{"pre_prompt":"Som tekstassistent: hva kommer sannsynligvis etter dette?"}
+{"pre_prompt":"Tenk deg at dette er en del av et større verk. Fortsett det."}
+{"pre_prompt":"Tenk deg at dette er midt i en historie. Hva skjer neste?"}
+{"pre_prompt":"Utfør en kontekstuell komplettering av følgende tekstbit."}
+{"pre_prompt":"Utfør en kreativ komplettering av følgende tekstsnutt."}
+{"pre_prompt":"Utfør en situasjonsriktig komplettering av dette innholdet."}
+{"pre_prompt":"Utfyll den manglende delen av dette tekstfragmentet."}
+{"pre_prompt":"Vis din forståelse ved å fullføre fragmentet på en hensiktsmessig måte."}
